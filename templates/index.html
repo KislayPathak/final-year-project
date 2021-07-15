@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendors/css/normalize.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendors/css/grid.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='vendors/css/animate.css') }}">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styleprediction.css') }}">
+
+    <title>Prediction Of Diseases</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="row">
+                <ul class="main-nav js--main-nav">
+                    <li><a href="#features">Intro</a></li>
+                    <li><a href="#works">How It Works</a></li>
+                    <li><a href="#plans">Details</a></li>
+                </ul>
+
+            </div>
+        </nav>
+        <div class="hero-text-box">
+            <h1>Going to hospital now is less of cure,<br>and more of an invitation to contagions.</h1>
+            <a class="btn btn-full"></a>
+            <p>so be your own doctor</p>>
+            <a class="btn btn-ghost"></a>
+        </div>
+
+    </header>
+
+    <section class="section-features js--section-features" id="features" style="background-color: rgb(218, 218, 218);">
+        <div class="row">
+            <h2>PREDICTION OF DISEASES USING ML</h2>
+
+            <p class="long-copy">
+                The project that deals with prediction of diseases using different algorithms of Machine Learning and
+                provides one step solution to major problems faced.
+            </p>
+            
+            <p class="long-copy">
+                The project deals with the identification of diseases using the medical history of a person.
+            </p>
+            <p class="long-copy">
+                The model is trained with the symptoms of diseases in different persons who are diagnosed to be
+                infected with those diseases.
+
+            </p>
+            <p class="long-copy"> 
+                A person medical history or the symptoms will be run on the trained model to depict if the person is
+                infected with the disease or not.
+            </p>
+            <p class="long-copy">
+                Different algorithms of Machine Learning will be used to train the model for different diseases.
+            </p>
+        </div>
+
+        
+    </section>
+
+
+    <section class="section-steps" id="works" style="background-color:rgb(255, 255, 255);">
+        <div class="row">
+            <h2>How it works &mdash; Simple as 1, 2, 3</h2>
+        </div>
+        <div class="row">
+            <div class="col span-1-of-2 steps-box">
+                <img src="{{ url_for('static', filename='resources/images/img.png') }}" alt="animate" > <!-- //mobile animation-->
+            </div>
+            <div class="col span-1-of-2 steps-box" >
+                <div class="works-step"></div>
+                <div>☛&nbsp;&nbsp;Step 1:</div>
+                <p>✓&nbsp;&nbsp;examine yourself
+                </p>
+                <div class="works-step"></div>
+                <div>☛&nbsp;&nbsp;Step 2:</div>
+                <p>✓&nbsp;&nbsp;input your symptoms
+                </p>
+                <div class="works-step"></div>
+                <div>☛&nbsp;&nbsp;step 3:</div>
+                <p>✓&nbsp;&nbsp;get your result
+                </p>
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="section-plans js--section-plans" id="plans">
+
+
+        <section class="section-form">
+            <div class="row">
+                <h2>We're here for you</h2>
+            </div>
+            <div class="row">
+                <form method="post" action="/" class="contact-form">
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label for="name">Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" name="name" id="name" placeholder="Your name">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <form method="GET" action="/" class="contact-form">
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="email">Email</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <input type="email" name="email" id="email" placeholder="Your email">
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col span-1-of-3">
+                                    <label for="find-us">symptoms</label>
+                                </div>
+                                <div class="col span-2-of-3">
+                                    <select id="select" onchange=getsomethingdone(this.id);>
+                                        <option value=5 name=""> </option>
+                                        <option value=1 name="itching"> itching</option>
+                                        <option value=2 name="skin_rash"> skin_rash</option>
+                                        <option value=3 name=" nodal_skin_eruptions"> nodal_skin_eruptions</option>
+                                        <option value=4 name=" dischromic _patches"> dischromic _patches</option>
+                                        <option value=6 name="continuous_sneezing"> continuous_sneezing</option>
+                                        <option value=7 name="continuous_sneezing"> shivering</option>
+                                        <option value=8 name="chills"> chills</option>
+                                        <option value=9 name="watering_from_eyes"> watering_from_eyes</option>
+                                        <option value=10 name="stomach_pain"> stomach_pain</option>
+                                        <option value=11 name="acidity"> acidity</option>
+                                        <option value=12 name="ulcers_on_tongue"> ulcers_on_tongue</option>
+                                        <option value=13 name=" vomiting"> vomiting</option>
+                                        <option value=14 name=" cough"> cough</option>
+                                        <option value=15 name=" chest_pain"> chest_pain</option>
+                                        <option value=16 name=" yellowish_skin"> yellowish_skin</option>
+                                        <option value=17 name=" nausea"> nausea</option>
+                                        <option value=18 name=" loss_of_appetite"> loss_of_appetite</option>
+                                        <option value=19 name="abdominal_pain"> abdominal_pain</option>
+                                        <option value=20 name="yellowing_of_eyes"> yellowing_of_eyes</option>
+                                        <option value=21 name="burning_micturition"> burning_micturition</option>
+                                        <option value=22 name="spotting_ urination"> spotting_ urination</option>
+                                        <option value=23 name="passage_of_gases"> passage_of_gases</option>
+                                        <option value=24 name=" internal_itching"> internal_itching</option>
+                                        <option value=25 name=" indigestion"> indigestion</option>
+                                        <option value=26 name=" muscle_wasting"> muscle_wasting</option>
+                                        <option value=27 name=" patches_in_throat"> patches_in_throat</option>
+                                        <option value=28 name="high_fever"> high_fever</option>
+                                        <option value=29 name=" extra_marital_contact"> extra_marital_contacts</option>
+                                        <option value=30 name=" fatigue"> fatigue</option>
+                                        <option value=31 name=" weight_loss"> weight_loss</option>
+                                        <option value=32 name=" restlessness"> restlessness</option>
+                                        <option value=33 name=" lethargy"> lethargy</option>
+                                        <option value=34 name="irregular_sugar_leve"> irregular_sugar_level</option>
+                                        blurred_and_distorted_vision</option>
+                                        <option value=36 name="obesity"> obesity</option>
+                                        <option value=37 name="excessive_hunge"> excessive_hunger</option>
+                                        <option value=38 name="increased_appetit"> increased_appetite</option>
+                                        <option value=39 name="polyuria"> polyuria</option>
+                                        <option value=40 name="sunken_eyes "> sunken_eyes</option>
+                                        <option value=41 name="dehydration"> dehydration</option>
+                                        <option value=42 name="diarrhoea"> diarrhoea</option>
+                                        <option value=43 name="breathlessness"> breathlessness</option>
+                                        <option value=44 name="family_history"> family_history</option>
+                                        <option value=45 name="mucoid_sputum"> mucoid_sputum</option>
+                                        <option value=46 name="headache"> headache</option>
+                                        <option value=47 name="dizziness"> dizziness</option>
+                                        <option value=48 name="loss_of_balance"> loss_of_balance</option>
+                                        <option value=49 name="lack_of_concentration"> lack_of_concentration</option>
+                                        <option value=50 name="stiff_neck"> stiff_neck</option>
+                                        <option value=51 name="depression"> depression</option>
+                                        <option value=52 name="irritability"> irritability</option>
+                                        <option value=53 name="visual_disturbances"> visual_disturbances</option>
+                                        <option value=54 name="back_pain"> back_pain</option>
+                                        <option value=55 name="weakness_in_limbs"> weakness_in_limbs</option>
+                                        <option value=56 name="neck_pain"> neck_pain</option>
+                                        <option value=57 name="weakness_of_one_body_side"> weakness_of_one_body_side
+                                        </option>
+                                        <option value=58 name="altered_sensorium"> altered_sensorium</option>
+                                        <option value=59 name="dark_urine"> dark_urine</option>
+                                        <option value=60 name="sweating"> sweating</option>
+                                        <option value=61 name="muscle_pain"> muscle_pain</option>
+                                        <option value=62 name="mild_fever"> mild_fever</option>
+                                        <option value=63 name="swelled_lymph_nodes"> swelled_lymph_nodes</option>
+                                        <option value=64 name="malaise"> malaise</option>
+                                        <option value=65 name="red_spots_over_body"> red_spots_over_body</option>
+                                        <option value=66 name="joint_pain"> joint_pain</option>
+                                        <option value=67 name="pain_behind_the_eyes"> pain_behind_the_eyes</option>
+                                        <option value=68 name="constipation"> constipation</option>
+                                        <option value=69 name="toxic_look_"> toxic_look_(typhos)</option>
+                                        <option value=70 name="belly_pain"> belly_pain</option>
+                                        <option value=71 name="yellow_urine"> yellow_urine</option>
+                                        <option value=72 name="receiving_blood_transfusion"> receiving_blood_transfusion
+                                        </option>
+                                        <option value=73 name="receiving_unsterile_injections">
+                                            receiving_unsterile_injections</option>
+                                        <option value=74 name="coma"> coma</option>
+                                        <option value=75 name="stomach_bleeding"> stomach_bleeding</option>
+                                        <option value=76 name="acute_liver_failure"> acute_liver_failure</option>
+                                        <option value=77 name="swelling_of_stomach"> swelling_of_stomach</option>
+                                        <option value=78 name="distention_of_abdomen"> distention_of_abdomen</option>
+                                        <option value=79 name="history_of_alcohol_consumption">
+                                            history_of_alcohol_consumption</option>
+                                        <option value=80 name="fluid_overload"> fluid_overload</option>
+                                        <option value=81 name="phlegm"> phlegm</option>
+                                        <option value=82 name="blood_in_sputum"> blood_in_sputum</option>
+                                        <option value=83 name="throat_irritation"> throat_irritation</option>
+                                        <option value=84 name="redness_of_eyes"> redness_of_eyes</option>
+                                        <option value=86 name="runny_nose"> runny_nose</option>
+                                        <option value=87 name="congestion"> congestion</option>
+                                        <option value=88 name="loss_of_smell"> loss_of_smell</option>
+                                        <option value=89 name="fast_heart_rate"> fast_heart_rate</option>
+                                        <option value=90 name="rusty_sputum"> rusty_sputum</option>
+                                        <option value=91 name="pain_during_bowel_movements"> pain_during_bowel_movements
+                                        </option>
+                                        <option value=92 name="pain_in_anal_region"> pain_in_anal_region</option>
+                                        <option value=93 name="bloody_stool"> bloody_stool</option>
+                                        <option value=94 name="irritation_in_anus"> irritation_in_anus</option>
+                                        <option value=95 name="cramps"> cramps</option>
+                                        <option value=96 name="bruising"> bruising</option>
+                                        <option value=97 name="swollen_legs"> swollen_legs</option>
+                                        <option value=98 name="swollen_blood_vessels"> swollen_blood_vessels</option>
+                                        <option value=99 name="prominent_veins_on_calf"> prominent_veins_on_calf
+                                        </option>
+                                        <option value=100 name="weight_gain"> weight_gain</option>
+                                        <option value=101 name="cold_hands_and_feets"> cold_hands_and_feets</option>
+                                        <option value=102 name="mood_swings"> mood_swings</option>
+                                        <option value=103 name="puffy_face_and_eyes"> puffy_face_and_eyes</option>
+                                        <option value=104 name="enlarged_thyroid"> enlarged_thyroid</option>
+                                        <option value=105 name="brittle_nails"> brittle_nails</option>
+                                        <option value=106 name="swollen_extremeties"> swollen_extremeties</option>
+                                        <option value=107 name="abnormal_menstruation"> abnormal_menstruation</option>
+                                        <option value=108 name="muscle_weakness"> muscle_weakness</option>
+                                        <option value=109 name="anxiety"> anxiety</option>
+                                        <option value=110 name="slurred_speech"> slurred_speech</option>
+                                        <option value=111 name="palpitations"> palpitations</option>
+                                        <option value=112 name="drying_and_tingling_lips"> drying_and_tingling_lips
+                                        </option>
+                                        <option value=113 name="knee_pain"> knee_pain</option>
+                                        <option value=114 name="hip_joint_pain"> hip_joint_pain</option>
+                                        <option value=115 name="swelling_joints"> swelling_joints</option>
+                                        <option value=116 name="painful_walking"> painful_walking</option>
+                                        <option value=117 name="movement_stiffness"> movement_stiffness</option>
+                                        <option value=118 name="spinning_movements"> spinning_movements</option>
+                                        <option value=119 name="unsteadiness"> unsteadiness</option>
+                                        <option value=120 name="pus_filled_pimples"> pus_filled_pimples</option>
+                                        <option value=121 name="blackheads"> blackheads</option>
+                                        <option value=122 name="scurring"> scurring</option>
+                                        <option value=123 name="bladder_discomfort"> bladder_discomfort</option>
+                                        <option value=124 name="foul_smell_of urine"> foul_smell_of_urine</option>
+                                        <option value=125 name="continuous_feel_of_urine"> continuous_feel_of_urine
+                                        </option>
+                                        <option value=126 name="skin_peeling"> skin_peeling</option>
+                                        <option value=127 name="silver_like_dusting"> silver_like_dusting</option>
+                                        <option value=128 name="small_dents_in_nails"> small_dents_in_nails</option>
+                                        <option value=129 name="inflammatory_nails"> inflammatory_nails</option>
+                                        <option value=130 name="blister"> blister</option>
+                                        <option value=131 name="red_sore_around_nose"> red_sore_around_nose</option>
+                                        <option value=132 name="yellow_crust_ooze"> yellow_crust_ooze</option>
+                                    </select>
+
+
+                                </div>
+                            </div>
+                    </div>
+                    <div class="row" id="feedback">
+                        <div class="col span-1-of-3">
+                            <label>your symptoms are</label>
+                        </div>
+                        <p id=result class="col span-1-of-3"></p>
+                        <script>
+
+                        </script>
+                        <div class="col span-2-of-3">
+
+
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>&nbsp;</label>
+                        </div>
+                        <div class="col span-2-of-3">
+
+                            <button type="submit" id="btnSubmit" class="button">
+                                submit
+                            </button>
+                            <a href="http://127.0.0.1:5000/server">check</a>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </form>
+            </div>
+        </section>
+        <footer>
+
+
+            <div class="row">
+                <p>
+
+                </p>
+            </div>
+        </footer>
+
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+        <script>
+            list = new Array();
+            function getsomethingdone(s1) {
+
+                s1 = document.getElementById(s1)
+
+
+                list.push(parseInt(s1.value));
+                console.log(list);
+
+                var out = " <label>your symptoms are</label>";
+                var atr = ['itching',
+                    ' skin_rash',
+                    ' nodal_skin_eruptions',
+                    ' dischromic _patches',
+                    '',
+                    ' continuous_sneezing',
+                    ' shivering',
+                    ' chills',
+                    ' watering_from_eyes',
+                    ' stomach_pain',
+                    ' acidity',
+                    ' ulcers_on_tongue',
+                    ' vomiting',
+                    ' cough',
+                    ' chest_pain',
+                    ' yellowish_skin',
+                    ' nausea',
+                    ' loss_of_appetite',
+                    ' abdominal_pain',
+                    ' yellowing_of_eyes',
+                    ' burning_micturition',
+                    ' spotting_ urination',
+                    ' passage_of_gases',
+                    ' internal_itching',
+                    ' indigestion',
+                    ' muscle_wasting',
+                    ' patches_in_throat',
+                    ' high_fever',
+                    ' extra_marital_contacts',
+                    ' fatigue',
+                    ' weight_loss',
+                    ' restlessness',
+                    ' lethargy',
+                    ' irregular_sugar_level',
+                    ' blurred_and_distorted_vision',
+                    ' obesity',
+                    ' excessive_hunger',
+                    ' increased_appetite',
+                    ' polyuria',
+                    ' sunken_eyes',
+                    ' dehydration',
+                    ' diarrhoea',
+                    ' breathlessness',
+                    ' family_history',
+                    ' mucoid_sputum',
+                    ' headache',
+                    ' dizziness',
+                    ' loss_of_balance',
+                    ' lack_of_concentration',
+                    ' stiff_neck',
+                    ' depression',
+                    ' irritability',
+                    ' visual_disturbances',
+                    ' back_pain',
+                    ' weakness_in_limbs',
+                    ' neck_pain',
+                    ' weakness_of_one_body_side',
+                    ' altered_sensorium',
+                    ' dark_urine',
+                    ' sweating',
+                    ' muscle_pain',
+                    ' mild_fever',
+                    ' swelled_lymph_nodes',
+                    ' malaise',
+                    ' red_spots_over_body',
+                    ' joint_pain',
+                    ' pain_behind_the_eyes',
+                    ' constipation',
+                    ' toxic_look_(typhos)',
+                    ' belly_pain',
+                    ' yellow_urine',
+                    ' receiving_blood_transfusion',
+                    ' receiving_unsterile_injections',
+                    ' coma',
+                    ' stomach_bleeding',
+                    ' acute_liver_failure',
+                    ' swelling_of_stomach',
+                    ' distention_of_abdomen',
+                    ' history_of_alcohol_consumption',
+                    ' fluid_overload',
+                    ' phlegm',
+                    ' blood_in_sputum',
+                    ' throat_irritation',
+                    ' redness_of_eyes',
+                    ' sinus_pressure',
+                    ' runny_nose',
+                    ' congestion',
+                    ' loss_of_smell',
+                    ' fast_heart_rate',
+                    ' rusty_sputum',
+                    ' pain_during_bowel_movements',
+                    ' pain_in_anal_region',
+                    ' bloody_stool',
+                    ' irritation_in_anus',
+                    ' cramps',
+                    ' bruising',
+                    ' swollen_legs',
+                    ' swollen_blood_vessels',
+                    ' prominent_veins_on_calf',
+                    ' weight_gain',
+                    ' cold_hands_and_feets',
+                    ' mood_swings',
+                    ' puffy_face_and_eyes',
+                    ' enlarged_thyroid',
+                    ' brittle_nails',
+                    ' swollen_extremeties',
+                    ' abnormal_menstruation',
+                    ' muscle_weakness',
+                    ' anxiety',
+                    ' slurred_speech',
+                    ' palpitations',
+                    ' drying_and_tingling_lips',
+                    ' knee_pain',
+                    ' hip_joint_pain',
+                    ' swelling_joints',
+                    ' painful_walking',
+                    ' movement_stiffness',
+                    ' spinning_movements',
+                    ' unsteadiness',
+                    ' pus_filled_pimples',
+                    ' blackheads',
+                    ' scurring',
+                    ' bladder_discomfort',
+                    ' foul_smell_of urine',
+                    ' continuous_feel_of_urine',
+                    ' skin_peeling',
+                    ' silver_like_dusting',
+                    ' small_dents_in_nails',
+                    ' inflammatory_nails',
+                    ' blister',
+                    ' red_sore_around_nose',
+                    ' yellow_crust_ooze']
+                for (i = 0; i < list.length; i++) {
+                    out += "<li>" + atr[list[i] - 1] + "</li>";
+                }
+                document.getElementById("feedback").innerHTML = out;
+
+
+
+
+            }
+
+            $("#btnSubmit").click(function (e) {
+                e.preventDefault();
+                var emailval = $("#email").val();
+                var nameval = $("#name").val();
+                var str = list;
+                alert(str);
+                axios.post("http://127.0.0.1:5000/server",{list:str,"email":emailval},)
+                    .then(function (response) {
+                        console.log(response);
+                    })
+                    .catch(function (error) {
+                        console.log(error);
+                    }); 
+
+
+
+              
+            })
+
+        </script>
+        <script src="http://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="http://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
+        <script src="">{ { url_for('static', filename = 'vendors/javascript/jquery.waypoints.min.js') } }</script>
+        <script src="">{ { url_for('static', filename = 'resources/javascript/script.js') } }</script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
+
+
+</body>
+
+</html>

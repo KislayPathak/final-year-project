@@ -1,0 +1,19 @@
+'''    else:
+        json_data = request.data
+
+        return json_data
+
+        inp=[0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,0 ,0 ,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        for j in [1,2,3,4]:
+            inp[int(j)]=1
+
+    prediction = model.predict([np.array(inp)])
+    prediction2 = regressor.predict([np.array(inp)])
+    prediction1 = svclassifier.predict([np.array(inp)])
+    print(prediction, prediction1, prediction2)
+    return render_template('server.html',diss=disease[prediction[0]])'''
